@@ -13,7 +13,22 @@ public class person {
     private int initiativeTurn;
     private int initiativeRun;
 
-    
+    public int getInitiativeTurn() {
+        return initiativeTurn;
+    }
+
+    public void setInitiativeTurn(int initiativeTurn) {
+        this.initiativeTurn = initiativeTurn;
+    }
+
+    public int getInitiativeRun() {
+        return initiativeRun;
+    }
+
+    public void setInitiativeRun(int initiativeRun) {
+        this.initiativeRun = initiativeRun;
+    }
+
     public int getReaction() {
         return reaction;
     }
