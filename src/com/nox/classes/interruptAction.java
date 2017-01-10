@@ -7,6 +7,13 @@ public class interruptAction {
     private int initiativePrice;
     private String interruptName;
 
+    public interruptAction(){}
+
+    public  interruptAction(int price, String name){
+        this.initiativePrice = price;
+        this.interruptName = name;
+    }
+
     public int getInitiativePrice() {
         return initiativePrice;
     }

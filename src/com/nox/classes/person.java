@@ -10,7 +10,10 @@ public class person {
     private int initiativeCount;
     private String name;
     private String player;
+    private int initiativeTurn;
+    private int initiativeRun;
 
+    
     public int getReaction() {
         return reaction;
     }
