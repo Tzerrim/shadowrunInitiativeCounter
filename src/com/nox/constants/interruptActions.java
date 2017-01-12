@@ -6,7 +6,7 @@ import com.nox.classes.interruptAction;
  * Created by Nox on 10.01.2017.
  */
 public class interruptActions {
-    // Frome Core book
+    // From Core book
     public static final interruptAction fullDefence =  new interruptAction(10,"Full defence");
     public static final interruptAction block = new interruptAction( 5, "Block");
     public static final interruptAction dodge = new interruptAction( 5 , "Dodge");
