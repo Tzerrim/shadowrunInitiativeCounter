@@ -2,6 +2,9 @@ package com.nox.constants;
 
 import com.nox.classes.interruptAction;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Created by Nox on 10.01.2017.
  */
@@ -24,4 +27,25 @@ public class interruptActions {
     public static final interruptAction riposte = new interruptAction(7, "Riposte");
     public static final interruptAction protectingThePrinciple = new interruptAction(5, "Protecting the principle");
     public static final interruptAction shadowBlock = new interruptAction(5,"Shadow block");
+
+    public static final ArrayList<interruptAction> interruptList = new ArrayList<>(
+            Arrays.asList(
+                    fullDefence,
+                    block,
+                    dodge,
+                    layDown,
+                    intercept,
+                    parry,
+                    countestrike,
+                    diveForCover,
+                    reversal,
+                    rightBackAtYa,
+                    runForYourLife,
+                    diveOnTheGrenade,
+                    sacrificeThrow,
+                    riposte,
+                    protectingThePrinciple,
+                    shadowBlock
+            ));
+
 }
