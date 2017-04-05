@@ -14,19 +14,13 @@ import static com.nox.constants.interruptActions.interruptList;
 public class Main {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Current IP");
+        JFrame frame = new JFrame("SR5 Initiative counter");
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }
         });
         String IP = "";
-        try {
-            IP = InetAddress.getLocalHost().getHostAddress();
-        }
-        catch (Exception e) {
-            IP = "Error finding IP";
-        }
         //Создается панель, которая будет содржать информацию о IP адресе
         JPanel panel = new JPanel();
         //добавление границы к панели
@@ -42,11 +36,11 @@ public class Main {
                 {"Joe", "Brown",
                         "Pool", new Integer(10), new Boolean(false)}
         };
-        panel.setBorder(BorderFactory.createTitledBorder("  Current IP Address"));
+        panel.setBorder(BorderFactory.createTitledBorder("  SR5 Initiative counter"));
                 panel.add(new JLabel("          " + IP + "          "));
                 panel.add( new JTable( data, columnNames));
                 panel.setSize(800, 600);
-                panel.add(new JButton(action, null));
+                panel.add(new JButton("New battle", null));
                 JComboBox interruptActionsCB = new JComboBox();
                 for(interruptAction I : interruptList){
                     interruptActionsCB.addItem(I.getInterruptName());
