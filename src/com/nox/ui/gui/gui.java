@@ -14,31 +14,30 @@ public class gui {
     private JCheckBox check = new JCheckBox("Check", false);
 
     public gui(){
-        //Создадим окно и установим заголовок
-        final JFrame window = new JFrame("Caption");
-
-        //Подключаем иконку из корня папки проекта
-        ImageIcon img = new ImageIcon("java.png");
-        window.setIconImage(img.getImage());
-
-        //Событие "закрыть" при нажатии по крестику окна
+        //Create window with a title
+        final JFrame window = new JFrame("Initiative counter");
+        //OnClose event when you push cross
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Текстовое поле
         JTextField textField = new JTextField();
         textField.setBackground(Color.WHITE);
         textField.setColumns(14);
-
-
-        //Создадим панель
+        // Panel and toolbar
         JPanel panel = new JPanel();
-
-        //Создадим кнопки
+        JToolBar toolbar = new JToolBar();
+        //Buttons
         JButton minButton = new JButton("Свернуть");
         JButton maxButton = new JButton("Растянуть");
         JButton normalButton = new JButton("Оригинал");
         JButton exitButton = new JButton("Выход");
         JButton helloButton = new JButton("Hello");
+        //Buttons for panel
+        JButton newBattle = new JButton("New battle");
+        JButton safeLog = new JButton("Safe log");
+        JButton endBattle = new JButton("End battle");
+        //Buttons for battle control
+
 
 
         //Событие для кнопки "Свернуть"

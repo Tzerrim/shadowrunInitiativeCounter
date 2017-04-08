@@ -3,7 +3,7 @@ package com.nox.constants;
 /**
  * Created by Nox on 18.01.2017.
  */
-public class Strings {
+public class strings {
     public static final String[] columnNames = {"Pers. name", "Initiative",  "Combat turn"};
     public static final String action = "ACTION";
     public static final String interruptAction = "INTERRUPT ACTION";
