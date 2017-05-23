@@ -39,6 +39,25 @@ public class gui {
         //Buttons for battle control
 
 
+        JMenuBar jmb = new JMenuBar(); // Top menu
+
+        JMenu file = new JMenu("File");
+
+        JMenuItem open = new JMenuItem("open");
+        file.add(open);
+
+        JMenuItem save = new JMenuItem("save");
+        file.add(save);
+
+        JMenuItem printLog = new JMenuItem("Print log");
+        file.add(printLog);
+
+        jmb.add(file);
+
+
+
+        JMenu about = new JMenu("About");
+        jmb.add(about);
 
         //Событие для кнопки "Свернуть"
         minButton.addActionListener(new ActionListener()
@@ -95,6 +114,7 @@ public class gui {
 
 
         //Добавим кнопки и поля на панель
+        panel.add(jmb);
         panel.add(minButton);
         panel.add(maxButton);
         panel.add(normalButton);

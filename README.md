@@ -15,3 +15,4 @@ I just want to try myself, and write a crossplatform app. And by the way I was i
 * For gui: swing
 * For battle log file will use XML
 
+
