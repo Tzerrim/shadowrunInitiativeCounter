@@ -1,33 +1,16 @@
-package com.nox.classes;
+package com.nox.classes.personages;
 
+import com.nox.interfaces.personage;
 /**
  * Created by Nox on 09.01.2017.
  */
-public class person {
+public class playerPerson extends personage{
     private int reaction;
     private int intuition;
     private int initiativeDice;
     private int initiativeCount;
-    private String name;
     private String player;
-    private int initiativeTurn;
-    private int initiativeRun;
 
-    public int getInitiativeTurn() {
-        return initiativeTurn;
-    }
-
-    public void setInitiativeTurn(int initiativeTurn) {
-        this.initiativeTurn = initiativeTurn;
-    }
-
-    public int getInitiativeRun() {
-        return initiativeRun;
-    }
-
-    public void setInitiativeRun(int initiativeRun) {
-        this.initiativeRun = initiativeRun;
-    }
 
     public int getReaction() {
         return reaction;
@@ -59,14 +42,6 @@ public class person {
 
     public void setInitiativeCount(int initiativeCount) {
         this.initiativeCount = initiativeCount;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getPlayer() {
