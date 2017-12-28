@@ -1,6 +1,6 @@
 package com.nox.actions;
 
-import com.nox.classes.interruptAction;
+import com.nox.classes.actions.interruptAction;
 import com.nox.classes.personages.playerPerson;
 
 /**
@@ -14,11 +14,11 @@ public class playerAction {
         return playerPerson;
     }
 
-    public static playerPerson interrupt (playerPerson playerPerson, interruptAction action){
-        if(playerPerson.getInitiativeCount() - action.getInitiativePrice() > 0) {
-            playerPerson.setInitiativeCount(playerPerson.getInitiativeCount() - action.getInitiativePrice());
-        }
-        return playerPerson;
-    }
+//    public static playerPerson interrupt (playerPerson playerPerson, interruptAction action){
+//        if(playerPerson.getInitiativeCount() - action.getInitiativePrice() > 0) {
+//            playerPerson.setInitiativeCount(playerPerson.getInitiativeCount() - action.getInitiativePrice());
+//        }
+//        return playerPerson;
+//    }
 
 }
