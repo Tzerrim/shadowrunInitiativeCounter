@@ -11,6 +11,9 @@ public class playerPerson extends personage{
     private int initiativeCount;
     private String player;
 
+    public playerPerson(){
+
+    }
 
     public int getReaction() {
         return reaction;

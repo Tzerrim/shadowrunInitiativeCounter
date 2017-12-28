@@ -7,6 +7,8 @@ public abstract class personage {
     int initiativeTurn;
     String owner;
 
+
+
     public String getOwner() {
         return owner;
     }
