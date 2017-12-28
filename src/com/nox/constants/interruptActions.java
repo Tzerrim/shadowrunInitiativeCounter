@@ -8,24 +8,12 @@ import java.util.Arrays;
 /**
  * Created by Nox on 10.01.2017.
  */
+
+
+import static com.nox.constants.strings.*;
+
 public class interruptActions {
-    // ACTION NAMES
-    public static final String FULL_DEFENCE = "Full defence";
-    public static final String BLOCK = "Block";
-    public static final String DODGE = "Dodge";
-    public static final String LAY_DOWN = "Lay down";
-    public static final String INTERCEPT = "Intercept";
-    public static final String PARRY = "Parry";
-    public static final String COUNTERSTRIKE = "Counterstrike";
-    public static final String DIVE_FOR_COVER= "Dive for cover";
-    public static final String REVERSAL = "Reversal";
-    public static final String RIGHT_BACK_AT_YA = "Right back at ya!";
-    public static final String RUN_FOR_YOUR_LIFE = "Run for your life";
-    public static final String DIVE_ON_THE_GRENADE = "Dive on the grenade";
-    public static final String SACRIFICE_THROW = "Sacrifice throw";
-    public static final String RIPOSTE = "Riposte";
-    public static final String PROTECTING_THE_PRINCIPLE = "Protecting the principle";
-    public static final String SHADOW_BLOCK = "Shadow block";
+
     // ACTIONS
     // From Core book
     public static final interruptAction FULL_DEFENCE_ACTION =  new interruptAction(10,FULL_DEFENCE);

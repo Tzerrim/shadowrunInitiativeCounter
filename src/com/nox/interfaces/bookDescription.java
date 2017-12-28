@@ -1,9 +1,9 @@
-package com.nox.classes;
+package com.nox.interfaces;
 
 /**
  * Created by Nox on 21.05.2017.
  */
-public class bookDescription {
+public abstract class  bookDescription {
     private String source;
     private String text;
     private String initiativeCost;
