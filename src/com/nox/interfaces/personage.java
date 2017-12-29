@@ -1,13 +1,39 @@
 package com.nox.interfaces;
 
+import java.util.List;
+
 public abstract class personage {
     int initiative;
     String name;
     int initiativeRun;
     int initiativeTurn;
     String owner;
+    List <effect> effects;
+    List <action> actions;
 
+    public void addEffect(effect e){
+        effects.add( e );
+    }
 
+    public void addAction( action a){
+        actions.add(a);
+    }
+
+    public List<effect> getEffects() {
+        return effects;
+    }
+
+    public void setEffects(List<effect> effects) {
+        this.effects = effects;
+    }
+
+    public List<action> getActions() {
+        return actions;
+    }
+
+    public void setActions(List<action> actions) {
+        this.actions = actions;
+    }
 
     public String getOwner() {
         return owner;
