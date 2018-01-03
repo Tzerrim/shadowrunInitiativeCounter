@@ -7,6 +7,8 @@ public class strings {
     // STANDART ACTIONS
     public static final String STANDART_ACTION= "Standart action";
     public static final String ROLL_INITIATIVE_ACTION = "Roll initiative action";
+    public static final String FREE_ACTION = "Free action";
+    public static final String DELAYED_ACTION = "Delayed action";
     // INTERRUPT ACTION NAMES
     public static final String FULL_DEFENCE = "Full defence";
     public static final String BLOCK = "Block";

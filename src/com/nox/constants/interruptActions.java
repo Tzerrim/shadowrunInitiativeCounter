@@ -14,7 +14,6 @@ import static com.nox.constants.strings.*;
 
 public class interruptActions {
 
-    // ACTIONS
     // From Core book
     public static final interruptAction FULL_DEFENCE_ACTION =  new interruptAction(10,FULL_DEFENCE);
     public static final interruptAction BLOCK_ACTION = new interruptAction( 5, BLOCK);

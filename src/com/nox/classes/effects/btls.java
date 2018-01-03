@@ -1,4 +1,9 @@
 package com.nox.classes.effects;
 
-public class btls extends  magic {
+import com.nox.interfaces.effect;
+
+public class btls extends effect {
+    public btls(){
+        this.duration = 999;
+    }
 }
