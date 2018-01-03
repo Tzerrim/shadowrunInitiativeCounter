@@ -1,4 +1,4 @@
-package com.nox.interfaces;
+package com.nox.interfaces.factories;
 
 public class initiativePassFactory {
 }

@@ -1,9 +1,12 @@
 package com.nox.constants;
 
 import com.nox.classes.actions.interruptAction;
+import com.nox.interfaces.action;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Nox on 10.01.2017.
@@ -32,25 +35,36 @@ public class interruptActions {
     public static final interruptAction RIPOSTE_ACTION = new interruptAction(7, RIPOSTE);
     public static final interruptAction PROTECTING_THE_PRINCIPLE_ACTION = new interruptAction(5, PROTECTING_THE_PRINCIPLE);
     public static final interruptAction SHADOW_BLOCK_ACTION = new interruptAction(5,SHADOW_BLOCK);
+
+    public static final Map<String, action> interruptMap = new HashMap<String, action>(){{
+        put(FULL_DEFENCE_ACTION.getName(), FULL_DEFENCE_ACTION);
+
+    }};
+
+
     // ACTION LIST
     public static final ArrayList<interruptAction> interruptList = new ArrayList<>(
-            Arrays.asList(
-                    FULL_DEFENCE_ACTION,
-                    BLOCK_ACTION,
-                    DODGE_ACTION,
-                    LAY_DOWN_ACTION,
-                    INTERCEPT_ACTION,
-                    PARRY_ACTION,
-                    COUNTERSTRIKE_ACTION,
-                    DIVE_FOR_COVER_ACTION,
-                    REVERSAL_ACTION,
-                    RIGHT_BACK_AT_YA_ACTION,
-                    RUN_FOR_YOUR_LIFE_ACTION,
-                    DIVE_ON_THE_GRENADE_ACTION,
-                    SACRIFICE_THROW_ACTION,
-                    RIPOSTE_ACTION,
-                    PROTECTING_THE_PRINCIPLE_ACTION,
-                    SHADOW_BLOCK_ACTION
-            ));
+            interruptMap.values()
+//            Arrays.asList(
+//                    FULL_DEFENCE_ACTION,
+//                    BLOCK_ACTION,
+//                    DODGE_ACTION,
+//                    LAY_DOWN_ACTION,
+//                    INTERCEPT_ACTION,
+//                    PARRY_ACTION,
+//                    COUNTERSTRIKE_ACTION,
+//                    DIVE_FOR_COVER_ACTION,
+//                    REVERSAL_ACTION,
+//                    RIGHT_BACK_AT_YA_ACTION,
+//                    RUN_FOR_YOUR_LIFE_ACTION,
+//                    DIVE_ON_THE_GRENADE_ACTION,
+//                    SACRIFICE_THROW_ACTION,
+//                    RIPOSTE_ACTION,
+//                    PROTECTING_THE_PRINCIPLE_ACTION,
+//                    SHADOW_BLOCK_ACTION
+//            )
+    );
+
+
 
 }
