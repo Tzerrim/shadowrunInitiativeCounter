@@ -38,32 +38,27 @@ public class interruptActions {
 
     public static final Map<String, action> interruptMap = new HashMap<String, action>(){{
         put(FULL_DEFENCE_ACTION.getName(), FULL_DEFENCE_ACTION);
+        put(BLOCK_ACTION.getName(), BLOCK_ACTION);
+        put(DODGE_ACTION.getName(), DODGE_ACTION);
+        put(LAY_DOWN_ACTION.getName(), LAY_DOWN_ACTION);
+        put(INTERCEPT_ACTION.getName(), INTERCEPT_ACTION);
+        put(PARRY_ACTION.getName(), PARRY_ACTION);
+        put(COUNTERSTRIKE_ACTION.getName(), COUNTERSTRIKE_ACTION);
+        put(DIVE_FOR_COVER_ACTION.getName(), DIVE_FOR_COVER_ACTION);
+        put(REVERSAL_ACTION.getName(), REVERSAL_ACTION);
+        put(RIGHT_BACK_AT_YA_ACTION.getName(), RIGHT_BACK_AT_YA_ACTION);
+        put(RUN_FOR_YOUR_LIFE_ACTION.getName(), RUN_FOR_YOUR_LIFE_ACTION);
+        put(DIVE_ON_THE_GRENADE_ACTION.getName(), DIVE_ON_THE_GRENADE_ACTION);
+        put(SACRIFICE_THROW_ACTION.getName(), SACRIFICE_THROW_ACTION);
+        put(RIPOSTE_ACTION.getName(), RIPOSTE_ACTION);
+        put(PROTECTING_THE_PRINCIPLE_ACTION.getName(), PROTECTING_THE_PRINCIPLE_ACTION);
+        put(SHADOW_BLOCK_ACTION.getName(), SHADOW_BLOCK_ACTION);
 
     }};
 
 
     // ACTION LIST
-    public static final ArrayList<interruptAction> interruptList = new ArrayList<>(
-            interruptMap.values()
-//            Arrays.asList(
-//                    FULL_DEFENCE_ACTION,
-//                    BLOCK_ACTION,
-//                    DODGE_ACTION,
-//                    LAY_DOWN_ACTION,
-//                    INTERCEPT_ACTION,
-//                    PARRY_ACTION,
-//                    COUNTERSTRIKE_ACTION,
-//                    DIVE_FOR_COVER_ACTION,
-//                    REVERSAL_ACTION,
-//                    RIGHT_BACK_AT_YA_ACTION,
-//                    RUN_FOR_YOUR_LIFE_ACTION,
-//                    DIVE_ON_THE_GRENADE_ACTION,
-//                    SACRIFICE_THROW_ACTION,
-//                    RIPOSTE_ACTION,
-//                    PROTECTING_THE_PRINCIPLE_ACTION,
-//                    SHADOW_BLOCK_ACTION
-//            )
-    );
+//    public static final ArrayList<interruptAction> interruptList =  (ArrayList<interruptAction>)interruptMap.values();
 
 
 

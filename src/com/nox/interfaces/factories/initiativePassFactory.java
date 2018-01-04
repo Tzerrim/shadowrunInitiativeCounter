@@ -1,4 +1,4 @@
 package com.nox.interfaces.factories;
 
-public class initiativePassFactory {
+public abstract class initiativePassFactory {
 }
