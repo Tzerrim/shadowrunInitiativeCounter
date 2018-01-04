@@ -3,13 +3,13 @@ package com.nox.interfaces;
 import java.util.List;
 
 public abstract class personage {
-    int initiative;
-    String name;
-    int initiativeRun;
-    int initiativeTurn;
-    String owner;
-    List <effect> effects;
-    List <action> actions;
+    protected int initiative;
+    protected String name;
+    protected int initiativeRun;
+    protected int initiativeTurn;
+    protected String owner;
+    protected List <effect> effects;
+    protected List <action> actions;
 
     public void addEffect(effect e){
         effects.add( e );

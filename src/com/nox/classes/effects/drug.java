@@ -4,7 +4,7 @@ import com.nox.interfaces.effect;
 
 public class drug extends effect {
     public drug(int begins, int duration, String name){
-        this.beginds = begins;
+        this.begins = begins;
         this.duration = duration;
         this.name = name;
 

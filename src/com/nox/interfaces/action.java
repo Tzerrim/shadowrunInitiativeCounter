@@ -1,8 +1,8 @@
 package com.nox.interfaces;
 
 public abstract class action implements Cloneable {
-    int cost;
-    String name;
+    protected int cost;
+    protected String name;
 
     @Override
     public action clone() {
