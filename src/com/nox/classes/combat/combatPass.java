@@ -14,27 +14,34 @@ import java.util.Collections;
 
 public class combatPass extends combat {
     private ArrayList<String> actions;
-
     private ArrayList<personage> activePersonages;
     private ArrayList<personage> passivePersonages;
-
     private action currentAction;
+    private boolean active;
 
     public combatPass(ArrayList<personage> personages){
         Collections.sort(personages, new personagesComparator());
         this.personages = personages;
-        activePersonages = personages;
-        passivePersonages = new ArrayList<personage>();
+        this.activePersonages = personages;
+        this.passivePersonages = new ArrayList<personage>();
+        this.active = true;
     }
 
     public String doCombat(action newAction){
-        while (activePersonages.size() > 0) {
+        String result;
+        String beginInitiative;
+        if (activePersonages.size() > 0) {
             personage pers = activePersonages.get(0);
+            beginInitiative = String.valueOf(pers.getInitiative());
             pers = this.doAction(pers, newAction);
             passivePersonages.add(pers);
-            activePersonages.remove()
+            activePersonages.remove(pers);
+            result = pers.getName() + " ( " + pers.getOwner() +  " ) [" + beginInitiative + " -> " + pers.getInitiative() + " ] " + newAction.getName();
         }
-
+        else {
+            result = "End of combat pass.";
+        }
+        return result;
     }
 
     private personage doAction( personage pers, action action){

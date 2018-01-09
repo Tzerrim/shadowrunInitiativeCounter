@@ -8,6 +8,7 @@ public abstract class personage implements Comparable <personage>{
     protected String name;
     protected int initiativeRun;
     protected int initiativeTurn;
+    protected int status;
     protected String owner;
     protected List <effect> effects;
     protected List <action> actions;
