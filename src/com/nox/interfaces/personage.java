@@ -2,7 +2,8 @@ package com.nox.interfaces;
 
 import java.util.List;
 
-public abstract class personage {
+
+public abstract class personage implements Comparable <personage>{
     protected int initiative;
     protected String name;
     protected int initiativeRun;
@@ -10,6 +11,19 @@ public abstract class personage {
     protected String owner;
     protected List <effect> effects;
     protected List <action> actions;
+
+    @Override
+    public int compareTo(personage comparePersonage) {
+
+        int compareInititative = ((personage) comparePersonage).getInitiative();
+
+        //ascending order
+        return this.initiative - compareInititative;
+
+        //descending order
+        //return compareQuantity - this.quantity;
+
+    }
 
     public void addEffect(effect e){
         effects.add( e );
