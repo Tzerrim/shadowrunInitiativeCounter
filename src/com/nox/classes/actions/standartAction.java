@@ -8,5 +8,6 @@ public class standartAction extends action {
     public standartAction(){
         this.setCost(10);
         this.setName(STANDART_ACTION);
+        this.pass = true;
     }
 }

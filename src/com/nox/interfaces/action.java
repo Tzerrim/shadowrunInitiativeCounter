@@ -2,6 +2,7 @@ package com.nox.interfaces;
 
 public abstract class action implements Cloneable {
     protected int cost;
+    protected boolean pass;
     protected String name;
 
     @Override
@@ -28,5 +29,13 @@ public abstract class action implements Cloneable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isPass() {
+        return pass;
+    }
+
+    public void setPass(boolean pass) {
+        this.pass = pass;
     }
 }

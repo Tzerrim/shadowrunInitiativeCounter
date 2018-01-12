@@ -8,5 +8,6 @@ public class freeAction extends action {
     public freeAction () {
         this.setCost(0);
         this.setName(FREE_ACTION);
+        this.pass = true;
     }
 }

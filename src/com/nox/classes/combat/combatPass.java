@@ -15,26 +15,12 @@ import java.util.Collections;
 public class combatPass extends combat {
     private ArrayList<String> actions;
 
-    private ArrayList<personage> activePersonages;
-    private ArrayList<personage> passivePersonages;
 
     private action currentAction;
 
     public combatPass(ArrayList<personage> personages){
         Collections.sort(personages, new personagesComparator());
         this.personages = personages;
-        activePersonages = personages;
-        passivePersonages = new ArrayList<personage>();
-    }
-
-    public String doCombat(action newAction){
-        while (activePersonages.size() > 0) {
-            personage pers = activePersonages.get(0);
-            pers = this.doAction(pers, newAction);
-            passivePersonages.add(pers);
-            activePersonages.remove()
-        }
-
     }
 
     private personage doAction( personage pers, action action){

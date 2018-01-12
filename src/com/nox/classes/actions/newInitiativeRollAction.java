@@ -8,5 +8,6 @@ public class newInitiativeRollAction extends action {
     public newInitiativeRollAction (){
         this.setCost(0);
         this.setName(ROLL_INITIATIVE_ACTION);
+        this.pass = false;
     }
 }

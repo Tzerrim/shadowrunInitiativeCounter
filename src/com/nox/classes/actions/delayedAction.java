@@ -8,5 +8,6 @@ public class delayedAction extends action {
     public delayedAction(int cost){
         this.setCost(cost);
         this.setName(DELAYED_ACTION);
+        this.pass = false;
     }
 }

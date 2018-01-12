@@ -4,13 +4,14 @@ import java.util.List;
 
 
 public abstract class personage implements Comparable <personage>{
-    protected int initiative;
-    protected String name;
-    protected int initiativeRun;
-    protected int initiativeTurn;
-    protected String owner;
-    protected List <effect> effects;
-    protected List <action> actions;
+    protected int initiative;       // Current inititative count: REA + INT + rolled d6 + other mods
+    protected int initiativeRun;    // Their initaitve run. 1 run - many turns
+    protected int initiativeTurn;   // Yjeit initative turn. Over 10 initiative, it is initiative pass
+    protected int status;           //  >0 - Ok, =0 - down, bleeding and so on, <0 - dead, escaped and so on out of the combat
+    protected String owner;         // Name of the gamer, who controll this personage
+    protected String name;          // Name of the personage
+    protected List <effect> effects;// List of current effects, which modifies initiative
+    protected List <action> actions;// List of actions in this combat
 
     @Override
     public int compareTo(personage comparePersonage) {
@@ -87,5 +88,13 @@ public abstract class personage implements Comparable <personage>{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }

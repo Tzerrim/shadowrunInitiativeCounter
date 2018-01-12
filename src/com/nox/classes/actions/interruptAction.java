@@ -9,5 +9,6 @@ public class interruptAction extends action {
     public interruptAction (int initiativeCost, String name){
         this.setCost(initiativeCost);
         this.setName(name);
+        this.pass = false;
     }
 }
