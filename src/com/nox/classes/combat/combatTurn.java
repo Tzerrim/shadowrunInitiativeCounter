@@ -16,8 +16,9 @@ public class combatTurn extends combat {
     private ArrayList<personage> personages;
 
     public combatTurn( ArrayList<personage> personages, int combatTurnNumber){
-
         this.personages = personages;
+        this.count = combatTurnNumber;
+        currentCombatPass = new combatPass(personages,0);
     }
 
     public combatResponse doCombat(action action){

@@ -54,6 +54,7 @@ public class combatPass extends combat {
         }
     }
 
+
     public ArrayList<String> getActions() {
         return actions;
     }
