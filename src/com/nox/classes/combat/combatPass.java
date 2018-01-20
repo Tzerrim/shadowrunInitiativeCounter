@@ -15,7 +15,7 @@ import java.util.Collections;
 
 public class combatPass extends combat {
     private ArrayList<String> actions;
-    private int combatPassNumber;
+    private int count;
     private action currentAction;
 
 
@@ -23,7 +23,7 @@ public class combatPass extends combat {
     public combatPass(ArrayList<personage> personages, int combatPassNumber){
         Collections.sort(personages, new personagesComparator());
         this.personages = personages;
-        this.combatPassNumber = combatPassNumber;
+        this.count = combatPassNumber;
     }
 
     public combatResponse doCombat(action action){
@@ -46,28 +46,20 @@ public class combatPass extends combat {
 
     protected boolean checkPersonage () {
         Collections.sort(personages, new personagesComparator());
-        personage pers = personages.get(0);
-        if( pers.getInitiativeRun() == combatPassNumber) {
+        if( personages.get(0).getInitiativeRun() == count) {
             return true;
         }
         else{
             return false;
         }
     }
+
     public ArrayList<String> getActions() {
         return actions;
     }
 
     public void setActions(ArrayList<String> actions) {
         this.actions = actions;
-    }
-
-    public int getCombatPassNumber() {
-        return combatPassNumber;
-    }
-
-    public void setCombatPassNumber(int combatPassNumber) {
-        this.combatPassNumber = combatPassNumber;
     }
 
     public action getCurrentAction() {

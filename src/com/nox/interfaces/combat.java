@@ -12,4 +12,27 @@ public abstract class combat {
 
     protected abstract boolean checkPersonage();
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public ArrayList<personage> getPersonages() {
+        return personages;
+    }
+
+    public void setPersonages(ArrayList<personage> personages) {
+        this.personages = personages;
+    }
+
+    public com.nox.interfaces.combatResponse getCombatResponse() {
+        return combatResponse;
+    }
+
+    public void setCombatResponse(com.nox.interfaces.combatResponse combatResponse) {
+        this.combatResponse = combatResponse;
+    }
 }
