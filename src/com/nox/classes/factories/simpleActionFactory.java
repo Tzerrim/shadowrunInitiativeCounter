@@ -13,6 +13,15 @@ import static com.nox.constants.strings.*;
 
 public class simpleActionFactory extends actionFactory {
 
+    private static simpleActionFactory uniqueInstance;
+
+    public static synchronized simpleActionFactory getInstance(){
+        if(uniqueInstance == null){
+            uniqueInstance = new simpleActionFactory();
+        }
+        return uniqueInstance;
+    }
+
     @Override
     protected action createAction(String type, int cost, String subtype) {
         action action;

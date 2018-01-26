@@ -12,7 +12,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-
+/*
+Combat pass is 10 initiative price part of combat turn.
+Each initiative pass has a number.
+ */
 public class combatPass extends combat {
     private ArrayList<String> actions;
     private int count;
@@ -26,6 +29,9 @@ public class combatPass extends combat {
         this.count = combatPassNumber;
     }
 
+    /*
+    Making action and cheking is any else pers availeble or tell that we need to create new combat pass
+     */
     public combatResponse doCombat(action action){
         personage pers = personages.get(0);
         if( this.checkPersonage()) {
