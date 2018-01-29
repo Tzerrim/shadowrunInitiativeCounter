@@ -13,7 +13,7 @@ public abstract class personage implements Comparable <personage>{
     protected List <effect> effects;// List of current effects, which modifies initiative
     protected List <action> actions;// List of actions in this combat
 
-    @Override
+
     public int compareTo(personage comparePersonage) {
 
         int compareInititative = ((personage) comparePersonage).getInitiative();
