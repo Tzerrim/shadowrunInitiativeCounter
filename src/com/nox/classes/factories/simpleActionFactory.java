@@ -12,8 +12,8 @@ import static com.nox.constants.interruptActions.interruptMap;
 import static com.nox.constants.strings.*;
 
 public class simpleActionFactory extends actionFactory {
-
     private static simpleActionFactory uniqueInstance;
+
 
     public static synchronized simpleActionFactory getInstance(){
         if(uniqueInstance == null){

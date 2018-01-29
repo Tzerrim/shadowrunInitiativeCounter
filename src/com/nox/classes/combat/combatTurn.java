@@ -29,18 +29,22 @@ public class combatTurn extends combat {
         if(response.isMakeNew()) {
             combatPasses.add(currentCombatPass);
             currentCombatPass = (combatPass) simpleCombatPassFactory.getInstance().create(combatPasses.size() -1, personages);
+            response = currentCombatPass.doCombat(action);
         }
+
+        response.setMakeNew( !this.checkPersonage());
+        return response;
     }
 
     protected boolean checkPersonage () {
-//        Collections.sort(personages, new personagesComparator());
-//        personage pers = personages.get(0);
-//        if( pers.getInitiativeRun() == combatPassNumber) {
-//            return true;
-//        }
-//        else{
-//            return false;
-//        }
+        Collections.sort(personages, new personagesComparator());
+        personage pers = personages.get(0);
+        if( pers.getInitiativeTurn() ==  this.count) {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     private void zerofyCombatPassForPersonages(){
